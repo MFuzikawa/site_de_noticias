@@ -1,10 +1,11 @@
 import React from "react";
 
-const Login= ()=>{
+const Writers = ()=> {
+
     return(
         <div>
-            Login
+            Writers
         </div>
     )
 }
-export default Login
+export default Writers

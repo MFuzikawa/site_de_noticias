@@ -12,7 +12,10 @@ const Sidebar = () => {
     return (
         <div className='w-[250px] h-screen fixed left-0 top-0 bg-blue-50'>
             <div className='h-[70px] flex justify-center items-center'>
-                <Link to='/'><img className='w-[170px] h-[35px]' src="" alt="" /></Link>
+
+                {/* adicionar a logo aqui*/}
+                <Link to='/'><img className='w-[170px] h-[35px]' src="" alt="imagem de namoro" /></Link>
+                
             </div>
 
             <ul className='px-3 flex flex-col gap-y-3 font-medium '>

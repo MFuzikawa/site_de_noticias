@@ -1,10 +1,10 @@
 import React from "react";
 
-const Login= ()=>{
+const AddWriters = ()=>{
     return(
         <div>
-            Login
+            AddWriters
         </div>
     )
 }
-export default Login
+export default AddWriters
