@@ -17,7 +17,7 @@ const News = ()=>{
                 <Link className="px-3 py-[6px] bg-purple-700 rounded-sm text-white hover:bg-purple-500 " to='/dashboard/news/create'>Create News</Link>
                 }
             </div>
-
+            <NewsContent />
         </div>
     )
 }

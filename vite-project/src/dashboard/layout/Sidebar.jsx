@@ -4,6 +4,7 @@ import { AiFillDashboard, AiOutlinePlus } from 'react-icons/ai'
 import {BiNews} from 'react-icons/bi'
 import { ImProfile} from 'react-icons/im'
 import { FiUser } from "react-icons/fi";
+import Namoro from "../../assets/Namoro.png"
 
 
 const Sidebar = () => {
@@ -14,8 +15,8 @@ const Sidebar = () => {
             <div className='h-[70px] flex justify-center items-center'>
 
                 {/* adicionar a logo aqui*/}
-                <Link to='/'><img className='w-[170px] h-[35px]' src="" alt="imagem de namoro" /></Link>
-                
+                <Link to='/'><img className='w-[170px] h-[35px]' src={Namoro} alt="imagem de namoro" /></Link>
+
             </div>
 
             <ul className='px-3 flex flex-col gap-y-3 font-medium '>
