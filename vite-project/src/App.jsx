@@ -10,6 +10,7 @@ import Unable from './dashboard/pages/Unable'
 import AddWriters from './dashboard/pages/AddWriters'
 import Writers from './dashboard/pages/Writers'
 import News from './dashboard/pages/News'
+import Profile from './dashboard/pages/Profile'
 
 
 
@@ -21,18 +22,26 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/login' element={<Login />} />
+      
       <Route path='/dashboard' element={<ProtectDashboard />} >
-        <Route path='' element={<MainLayout />} >
+      <Route element={<MainLayout />}>
+        <Route index element={<Navigate to='admin' replace />} />
           <Route path='' element={<Navigate to='dashboard/admin' />} />
           <Route path='unable-access' element={<Unable />} />
           <Route path='news' element={<News />} />
           <Route path='' element={<ProtectRole role='admin' />} >
             <Route path='admin' element={<AdminIndex />} />
-            <Route path='writers/add' element={<AddWriters />} />
+            <Route path='writer/add' element={<AddWriters />} />
             <Route path='writers' element={<Writers />} />
+            <Route path='profile' element={<Profile />}/>
           </Route>
         </Route>
       </Route>
+      <Route path='*' element={
+        <div className='flex mt-50 justify-center '>
+          <h2>erro 404 - Página não encontrada</h2>
+        </div>
+      }/>
     </Routes>
     </BrowserRouter>
   )

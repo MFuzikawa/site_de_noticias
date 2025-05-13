@@ -45,9 +45,9 @@ const NewsContent = () => {
                             </td>
                             <td className="px-6 py-4">
                                 <div className="flex justify-start items-center gap-x-4 text-white">
-                                    <Link className="p-[6] bg-green-600 rounded hover:shadow-lg hover: shadow-green-500"><FaEye /></Link>
-                                    <Link className="p-[6] bg-yellow-600 rounded hover:shadow-lg hover: shadow-yellow-500"><FaEdit /></Link>
-                                    <div className="p-[6] bg-red-600 rounded hover:shadow-lg hover: shadow-red-500"><FaTrash /></div>
+                                    <Link className="p-[6px] bg-green-600 rounded hover:shadow-lg hover: shadow-green-500"><FaEye /></Link>
+                                    <Link className="p-[6px] bg-yellow-600 rounded hover:shadow-lg hover: shadow-yellow-500"><FaEdit /></Link>
+                                    <div className="p-[6px] bg-red-600 rounded hover:shadow-lg hover: shadow-red-500"><FaTrash /></div>
                                 </div>
                             </td>
                         </tr>
