@@ -26,7 +26,6 @@ function App() {
       <Route path='/dashboard' element={<ProtectDashboard />} >
       <Route element={<MainLayout />}>
         <Route index element={<Navigate to='admin' replace />} />
-          <Route path='' element={<Navigate to='dashboard/admin' />} />
           <Route path='unable-access' element={<Unable />} />
           <Route path='news' element={<News />} />
           <Route path='' element={<ProtectRole role='admin' />} >

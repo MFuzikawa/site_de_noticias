@@ -5,8 +5,8 @@ const AddWriters = () => {
     return (
         <div className="bg-white rounded-md">
             <div className="flex justify-between p-4">
-                <h2 className="rext-x1 font-medium">Add Writer</h2>
-                <Link className="px-3 py-[6px] bg-purple-700 rounded-sm text-white hover:bg-purple-500 " to='/dashboard/writer'>Writer</Link>
+                <h2 className="text-x1 font-medium">Add Writer</h2>
+                <Link className="px-3 py-[6px] bg-purple-700 rounded-sm text-white hover:bg-purple-500 " to='/dashboard/writers'>Writer</Link>
             </div>
             <div className="p-4">
                 <form>
@@ -39,7 +39,7 @@ const AddWriters = () => {
                         </div>
                     </div>
                     <div className="mt-4">
-                        <button className="px-3 py-[6px] bg-purple-700 rounded-sm text-white hover:bg-purple-500 " to='/dashboard/writer'>Add Writer</button>
+                        <button type="submit" className="px-3 py-[6px] bg-purple-700 rounded-sm text-white hover:bg-purple-500 " to='/dashboard/writers'>Add Writer</button>
                     </div>
 
                 </form>
