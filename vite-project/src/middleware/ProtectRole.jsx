@@ -4,7 +4,7 @@ import { Outlet, Navigate } from 'react-router-dom';
 
 const ProtectRole = ({ role }) => {
   const userInfo = {
-    Name: "Farid",
+    Name: "Profile",
     role: "admin"
   };
 

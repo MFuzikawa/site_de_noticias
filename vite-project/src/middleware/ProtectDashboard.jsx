@@ -3,7 +3,7 @@ import {Outlet, Navigate} from 'react-router-dom'
 
 const ProtectDashboard = ()=>{
     const userInfo = {
-        name: "Farid",
+        name: "Profile",
         role: "admin"
 }
 if(userInfo){

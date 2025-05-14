@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEdit, FaEye, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Namoro from "../../assets/Namoro.png"
+import business from "../../assets/Business.png"
 
 const NewsContent = () => {
 
@@ -13,7 +13,7 @@ const NewsContent = () => {
                     <option value="">Select Type</option>
                     <option value="active">Active</option>
                     <option value="pending">Pending</option>
-                    <option value="deactive">Deactive</option>
+                    <option value="deactive">Deactivated</option>
                 </select>
                 <input type="text" placeholder="Search News" className="px-3 py-2 rounded-md border outline-0 border-gray-300 focus:border-green-500 h-10" />
             </div>
@@ -35,9 +35,9 @@ const NewsContent = () => {
                     <tbody>
                         <tr className="bg-white border-b">
                             <td className="p-6 py-4">1</td>
-                            <td className="px-6 py-4">Eu amo muito minha namorada</td>
-                            <td className="px-6 py-4"><img className="w-[40px] h-[40px]" src={Namoro} alt="imagem fofa" /></td>
-                            <td className="px-6 py-4">Relationship</td>
+                            <td className="px-6 py-4">Changes in corporative world</td>
+                            <td className="px-6 py-4"><img className="w-[40px] h-[40px]" src={business} alt="imagem fofa" /></td>
+                            <td className="px-6 py-4">Business</td>
                             <td className="px-6 py-4">Lorem ipsum dolor sit amet consectetur</td>
                             <td className="px-6 py-4">17 de Junho de 2025</td>
                             <td className="px-6 py-4">
