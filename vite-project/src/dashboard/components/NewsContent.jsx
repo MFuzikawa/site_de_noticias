@@ -2,6 +2,7 @@ import React from "react";
 import { FaEdit, FaEye, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import business from "../../assets/Business.png"
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const NewsContent = () => {
 
@@ -53,6 +54,26 @@ const NewsContent = () => {
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div className="flex items-center justify-end px-10 gap-x-3 tet-slate-600">
+                <div className="flex gap-x-3 justify-center items-center">
+                    <p className="px-4 py-3 font-semibold text-sm">News par page</p>
+                    <select name="search-category" id="search=category">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                    </select>
+                </div>
+                <p className="px-4 py-6 font-semibold text-sm"></p>
+                <div className="flex items-center gap-x-3">
+                    <IoIosArrowRoundBack className="w-5 h-5 cursor-pointer"/>
+                    <IoIosArrowRoundForward className="w-5 h-5 cursor-pointer" />
+                </div>
             </div>
         </div>
 

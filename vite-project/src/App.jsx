@@ -27,8 +27,8 @@ function App() {
       <Route element={<MainLayout />}>
         <Route index element={<Navigate to='admin' replace />} />
           <Route path='unable-access' element={<Unable />} />
-          <Route path='news' element={<News />} />
           <Route path='' element={<ProtectRole role='admin' />} >
+          <Route path='news' element={<News />} />
             <Route path='admin' element={<AdminIndex />} />
             <Route path='writer/add' element={<AddWriters />} />
             <Route path='writers' element={<Writers />} />
